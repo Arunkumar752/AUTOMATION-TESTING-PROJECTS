@@ -17,3 +17,16 @@ Postman Java script functions which is kept commonly in collection and we can ac
                3)Collection variable
                4)local variable
                5)Data variable
+
+        4)Worked in Authentications like like basicAuth,Oath 1,Oath2,bearer token ,Authrization in header
+
+        5)Verified whole response body,validating particular field and value,validating field null,Validated length of object ,removed dynamic tags or validated with 2 response body 
+          ,verifying response status code,Validated pdf string null,Validated XML Response
+                  pm.test("Verfied "+desc+" - "+value, ()=> {
+              var responseData = pm.response.text();
+              const Res = cheerio.load(responseData, {
+              ignoreWhitespace: true,
+              xmlMode: true
+              });
+              let DocType= Res(Object).find(field);
+              pm.expect(DocType.text()).to.eql(value);
