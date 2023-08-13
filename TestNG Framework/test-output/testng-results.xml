@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="27386" started-at="2023-02-11T12:40:18 IST" finished-at="2023-02-11T12:40:45 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="27386" started-at="2023-02-11T12:40:18 IST" finished-at="2023-02-11T12:40:45 IST">
+      <class name="arunkumar.Test.LoginTestC">
+        <test-method status="PASS" signature="mm()[pri:0, instance:arunkumar.Test.LoginTestC@43c1b556]" name="mm" is-config="true" duration-ms="11267" started-at="2023-02-11T12:40:19 IST" finished-at="2023-02-11T12:40:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mm -->
+        <test-method status="PASS" signature="checkValid(java.lang.String,java.lang.String)[pri:1, instance:arunkumar.Test.LoginTestC@43c1b556]" name="checkValid" duration-ms="2858" started-at="2023-02-11T12:40:30 IST" data-provider="getDataa" finished-at="2023-02-11T12:40:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arunkumar.c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kgisl@12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkValid -->
+        <test-method status="PASS" signature="close_driver()[pri:0, instance:arunkumar.Test.LoginTestC@43c1b556]" name="close_driver" is-config="true" duration-ms="688" started-at="2023-02-11T12:40:33 IST" finished-at="2023-02-11T12:40:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_driver -->
+        <test-method status="PASS" signature="mm()[pri:0, instance:arunkumar.Test.LoginTestC@43c1b556]" name="mm" is-config="true" duration-ms="5279" started-at="2023-02-11T12:40:34 IST" finished-at="2023-02-11T12:40:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mm -->
+      </class> <!-- arunkumar.Test.LoginTestC -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

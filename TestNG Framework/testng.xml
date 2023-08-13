@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="true">
+<!--	<listeners>
+		<listener class-name="arunkmar.TestCompo.Listeners"></listener>
+	</listeners>-->
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="arunkumar.Test.CalendarTest"/>
+      <class name="arunkumar.Test.LoginTestC"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
