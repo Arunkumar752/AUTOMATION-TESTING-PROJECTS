@@ -33,6 +33,7 @@ Developed TestNg framework using java With class seggregated with BaseUtils,list
 
   
 CommonlyUsing:
+
            The methods which are commonly using like login and accesing the menu is kept in this java file,it will reduce the code reusuability
            
 ExtentReporterNGG
