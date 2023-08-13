@@ -1,0 +1,41 @@
+PRE REQUEST:
+
+let PolicyNos = pm.collectionVariables.get("PolicyNos");
+let Descrlist =pm.collectionVariables.get("Descrlist");
+
+if(!PolicyNos || PolicyNos.length == 0) {
+    PolicyNos = pm.environment.get("ev_policyCollection").split(",");
+    Descrlist= pm.environment.get("ev_policyDesc")
+}
+
+let currentpolicyNumber = PolicyNos.shift();
+let Descrlt = Descrlist.shift();
+console.log(currentpolicyNumber)
+pm.collectionVariables.set("policyNumber", currentpolicyNumber);
+pm.collectionVariables.set("PolicyNos", PolicyNos);
+pm.collectionVariables.set("Descr", Descrlt);
+pm.collectionVariables.set("Descrlist", Descrlist);
+
+TEST:
+const PolicyNos = pm.collectionVariables.get("PolicyNos");
+
+const Descr = pm.collectionVariables.get("Descr");
+if (PolicyNos && PolicyNos.length > 0){
+    postman.setNextRequest("PP_Get Fetch Schedule Combination");
+}
+
+//Verify response status code in response body
+testUtils.verfiyResponseSuccessStatusCode(pm, Descr);
+
+// Verify response status messsage in response body
+testUtils.verifyStatusMessage(pm,"SUCCESS","Verified Status should be SUCCESS");
+const Resp=pm.response.json();
+const pdf=Resp.returnPDF;
+
+//Verify field null or not
+const Data = Resp.returnPDFByte;
+const Pdf = Data!=""
+
+//verify the actucal and expected response body
+testUtils.verfiyExpectedResponseMatchesActualResponse(pm,true,Pdf)
+
