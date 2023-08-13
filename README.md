@@ -40,6 +40,7 @@ ExtentReporterNGG
            this class conatins the configuration of the **ExtentReport and ExtentSparkReporter** 
 
 GlobalData:
+
            GlobalData this is the property file where we can easily access the browser setting(like chrome firefox), jdbc excel file name and other settings easily 
 
 aunkumar/pageobject:
