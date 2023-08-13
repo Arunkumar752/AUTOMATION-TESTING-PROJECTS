@@ -1,6 +1,7 @@
 Postman Java script functions which is kept commonly in collection and we can access in the prerequest anf request
 
   Different ways of handling request
+  
         1)We have done the parameterizion of the data and sent the multiple request with sendNextRequest
               if (PolicyNos && PolicyNos.length > 0){
               postman.setNextRequest("PP_Get Fetch Schedule Combination");
