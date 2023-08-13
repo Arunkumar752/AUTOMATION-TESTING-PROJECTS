@@ -1,5 +1,5 @@
 # AUTOMATION-TESTING-PROJECTS
-Developed TestNg framework using java With class seggregated with common methods,listeners,Testng.xml,Pom
+Developed TestNg framework using java With class seggregated with BaseUtils,listeners,PageObjectClass.java,Test.java,Testng.xml,Pom.xml
 
 - src
   - main/java
