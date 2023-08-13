@@ -1,4 +1,4 @@
-# AUTOMATION-TESTING-PROJECTS
+# TestNG Framework
 Developed TestNg framework using java With class seggregated with BaseUtils,listeners,PageObjectClass.java,Test.java,Testng.xml,Pom.xml
 
 - src
@@ -30,6 +30,16 @@ Developed TestNg framework using java With class seggregated with BaseUtils,list
        -ExtentReport.html
 - testng.xml
 - pom.xml
+
+  
+CommonlyUsing:
+           The methods which are commonly using is kept in this java file,it will reduce the code reusuability
+           
+ExtentReporterNGG
+           this class conatins the configuration of the ExtentReport and ExtentSparkReporter 
+
+GlobalData:
+           this the property file where we can easily access the browser setting(like chrome firefox), jdbc excel file name and other settings easily 
 
 BaseTestCommon:
            This java class contains the common methods of java and selenium,whenever we need this method we can call from the test class.This can optimize the code effectively
