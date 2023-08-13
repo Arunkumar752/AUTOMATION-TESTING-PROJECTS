@@ -4,7 +4,6 @@ Developed TestNg framework using java With class seggregated with common methods
 - src
   - main/java
   - test/java
-  - 
         - arunkmar/testcompo
               -BaseTestCommon.java
               -Listeners.java
@@ -13,7 +12,7 @@ Developed TestNg framework using java With class seggregated with common methods
               -LoginTest.java
               -CalendarTest.java
               -CheckTest.java
-    - resources
-      - TestData.xlsx
+  - resources
+        -TestData.xlsx
 - testng.xml
 - pom.xml
