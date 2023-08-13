@@ -29,7 +29,7 @@ Developed TestNg framework using java With class seggregated with BaseUtils,list
         -TestData.xlsx
   -TestOutput
   
-       -ExtentReport.html
+        -ExtentReport.html
   
 - testng.xml
 - pom.xml
