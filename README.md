@@ -5,7 +5,7 @@ Developed TestNg framework using java With class seggregated with BaseUtils,list
   - main/java
     
         -absractcom
-              -CommonlyUsing.java
+              -BaseUtils.java
         -resources
               -ExtentReporterNG.java
               -GlobalData.properties
@@ -32,7 +32,7 @@ Developed TestNg framework using java With class seggregated with BaseUtils,list
 - pom.xml
 
   
-CommonlyUsing:
+BaseUtils:
 
            The methods which are commonly using like login and accesing the menu is kept in this java file,it will reduce the code reusuability
            
