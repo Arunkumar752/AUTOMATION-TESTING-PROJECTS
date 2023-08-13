@@ -25,9 +25,12 @@ Developed TestNg framework using java With class seggregated with BaseUtils,list
               -CalendarTest.java
               -CheckTest.java
   - resources
+    
         -TestData.xlsx
   -TestOutput
+  
        -ExtentReport.html
+  
 - testng.xml
 - pom.xml
 
