@@ -1,0 +1,23 @@
+
+          FetchXMLFieldAndValue: function(pm,Object,field){
+            var responseData = pm.response.text();
+            const Res = cheerio.load(responseData, {
+            ignoreWhitespace: true,
+            xmlMode: true
+            });
+            let DocType= Res(Object).find(field);
+            // console.log(DocType.text())   
+             return DocType.text();
+        },
+
+ verifyFieldNullOrNot : function (pm,description) {        
+           pm.test("Verfied "+description, ()=> {
+            const jsonData = pm.response.json()
+            if(jsonData.returnPDF == null)
+            {
+                pm.expect.fail(jsonData.returnPDF)
+            }
+            else{
+                pm.expect(jsonData.returnPDF).not.equal(null)
+            }
+    });},
